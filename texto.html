@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zambon Automotores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #003366; /* Azul oscuro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #CC0000; /* Rojo */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .autos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .auto {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            width: 300px;
+        }
+        .auto img {
+            width: 100%;
+            height: auto;
+        }
+        .auto h3 {
+            background-color: #003366;
+            color: white;
+            margin: 0;
+            padding: 10px;
+        }
+        .contacto, .formulario {
+            background-color: #f4f4f4;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .formulario form {
+            display: flex;
+            flex-direction: column;
+        }
+        .formulario input, .formulario textarea, .formulario button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .formulario button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .formulario button:hover {
+            background-color: #CC0000;
+        }
+        footer {
+            text-align: center;
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zambon Automotores</h1>
+        <p>¡Encuentra el auto de tus sueños!</p>
+    </header>
+    <nav>
+        <a href="#autos">Autos Disponibles</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#formulario">Formulario</a>
+    </nav>
+    <section id="autos">
+        <h2>Autos Disponibles</h2>
+        <div class="autos">
+            <div class="auto">
+                <img src="auto1.jpg" alt="Auto 1">
+                <h3>Sedan Deportivo</h3>
+                <p>Precio: $25,000</p>
+            </div>
+            <div class="auto">
+                <img src="auto2.jpg" alt="Auto 2">
+                <h3>Camioneta Familiar</h3>
+                <p>Precio: $35,000</p>
+            </div>
+            <div class="auto">
+                <img src="auto3.jpg" alt="Auto 3">
+                <h3>Compacto Económico</h3>
+                <p>Precio: $15,000</p>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: +54 123 456 789</p>
+        <p>Correo: contacto@zambonautomotores.com</p>
+        <p>Dirección: Av. Principal 123, Ciudad, País</p>
+    </section>
+    <section id="formulario" class="formulario">
+        <h2>Formulario de Contacto</h2>
+        <form action="procesar_formulario.php" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Zambon Automotores. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
